@@ -1,0 +1,10 @@
+{
+  "name": "lit-element-playground",
+  "version": "0.0.1",
+  "description": "https://lit-element.polymer-project.org/ これをおためしで使ってみたいリポジトリ",
+  "author": "piyoppi",
+  "license": "MIT",
+  "dependencies": {
+    "lit-element": "^2.2.1"
+  }
+}
