@@ -5,7 +5,6 @@ class SampleTextbox extends LitElement {
   constructor() {
     super();
     this.regexp = '';
-    this.list = []; 
     this.message = '';
     this.messageClasses = {
       hidemsg: false
@@ -14,7 +13,6 @@ class SampleTextbox extends LitElement {
 
   static get properties() {
     return {
-      list: { type: Array },
       regexp: { type: String },
       message: { type: String },
     };
@@ -36,7 +34,6 @@ class SampleTextbox extends LitElement {
 
   isValid(value) {
     const re = new RegExp(this.regexp);
-    console.log(value.match(re));
     return !!value.match(re);
   }
 
